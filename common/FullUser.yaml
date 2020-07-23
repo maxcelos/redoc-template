@@ -1,0 +1,15 @@
+type: object
+properties:
+  uuid:
+    type: string
+    example: '1d92e034-5fe8-42f3-ad24-d8312dd7c5fd'
+  name:
+    type: string
+    example: 'john Doe'
+  email:
+    type: string
+    example: 'wXLGv3Fvb5@gmail.com'
+  roles:
+    type: array
+    items:
+      $ref: '../doc.yaml#/components/schemas/SimpleRole'

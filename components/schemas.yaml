@@ -1,0 +1,21 @@
+Error:
+  type: object
+  properties:
+    code:
+      type: integer
+    message:
+      type: string
+SimpleUser:
+  $ref: '../common/SimpleUser.yaml'
+FullUser:
+  $ref: '../common/FullUser.yaml'
+SimpleRole:
+  $ref: '../common/SimpleRole.yaml'
+SimplePermission:
+  $ref: '../common/SimplePermission.yaml'
+SimpleDate:
+  $ref: '../common/SimpleDate.yaml'
+UserStamps:
+  $ref: '../common/UserStamps.yaml'
+TimeStamps:
+  $ref: '../common/TimeStamps.yaml'

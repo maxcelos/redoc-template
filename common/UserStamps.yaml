@@ -1,0 +1,8 @@
+type: object
+properties:
+  creator:
+    $ref: '../doc.yaml#/components/schemas/SimpleUser'
+  editor:
+    $ref: '../doc.yaml#/components/schemas/SimpleUser'
+  destroyer:
+    $ref: '../doc.yaml#/components/schemas/SimpleUser'

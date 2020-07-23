@@ -1,0 +1,7 @@
+type: object
+properties:
+  data:
+    allOf:
+      - $ref: '../specifics/Resource.yaml'
+      - $ref: './../../../doc.yaml#/components/schemas/TimeStamps'
+      - $ref: './../../../doc.yaml#/components/schemas/UserStamps'

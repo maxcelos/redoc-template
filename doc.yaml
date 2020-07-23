@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: Nice API Doc
+  version: v0.0.1
+  x-logo:
+    url: "https://raw.githubusercontent.com/Redocly/redoc/master/docs/images/redoc-logo.png"
+  description:
+    $ref: './intro.md'
+
+servers:
+  - url: https://api.seusite.tdl/
+    description: Produção
+  - url: https://apidev.seusite.tdl/
+    description: Desenvolvimento
+
+tags:
+  $ref: './tags.yaml'
+
+paths:
+  $ref: './paths.yaml'
+
+components:
+  schemas:
+    $ref: './components/schemas.yaml'
+  parameters:
+    $ref: './components/parameters.yaml'
+  responses:
+    $ref: './components/responses.yaml'

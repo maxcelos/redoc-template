@@ -1,0 +1,5 @@
+# Primary objects
+- name: "agents"
+  x-displayName: "Agents"
+  description: |
+    Principais usuários do sistema. Responsáveis pela administração

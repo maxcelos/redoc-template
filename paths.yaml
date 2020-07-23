@@ -1,0 +1,4 @@
+/agents:
+  $ref: './paths/agents/basic.yaml'
+/agents/{id}:
+  $ref: './paths/agents/withID.yaml'

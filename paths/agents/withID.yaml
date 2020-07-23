@@ -1,0 +1,53 @@
+get:
+  tags:
+    - agents
+  summary: Pega agente
+  description: Pega dados de um agente pelo id
+  operationId: "getSingleAgent"
+  responses:
+    '200':
+      description: Dados retornados
+      content:
+        application/json:
+          schema:
+            $ref: './templates/SimpleResponse.yaml'
+    '404':
+      $ref: '../../doc.yaml#/components/responses/404NotFound'
+put:
+  tags:
+    - agents
+  summary: Atualiza agente
+  description: Atualiza agente pelo id
+  operationId: "updateAgent"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: './specifics/UpdateBody.yaml'
+  responses:
+    '200':
+      description: Atualização realizada com sucesso
+      content:
+        application/json:
+          schema:
+            $ref: './templates/SimpleResponse.yaml'
+    '404':
+      $ref: '../../doc.yaml#/components/responses/404NotFound'
+    '422':
+      $ref: '../../doc.yaml#/components/responses/422ValidationError'
+    '500':
+      $ref: '../../doc.yaml#/components/responses/500ServerError'
+
+delete:
+  tags:
+    - agents
+  summary: Apaga agente
+  description: Remover agente pelo id
+  operationId: "deleteAgent"
+  responses:
+    '204':
+      $ref: '../../doc.yaml#/components/responses/204DeletedSuccess'
+    '500':
+      $ref: '../../doc.yaml#/components/responses/500ServerError'
+

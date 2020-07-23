@@ -1,0 +1,8 @@
+type: object
+properties:
+  uuid:
+    type: string
+    example: 'cc0c7533-f4bb-4ecf-b910-1e9e66a6ea9b'
+  user:
+    $ref: '../../../doc.yaml#/components/schemas/FullUser'
+

@@ -1,0 +1,11 @@
+type: object
+properties:
+  uuid:
+    type: string
+    example: '0198efce-2108-40c1-a534-f60c2f5376a4'
+  name:
+    type: string
+    example: 'John Doe'
+  email:
+    type: string
+    example: 'john@email.com'

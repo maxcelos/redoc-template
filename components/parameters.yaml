@@ -1,0 +1,47 @@
+pageSize:
+  name: 'page[size]'
+  in: query
+  schema:
+    type: integer
+    example: 15
+  description: Número de resultados por página
+
+pageNumber:
+  in: query
+  name: 'page[number]'
+  schema:
+    type: integer
+    example: 4
+  description: Ir para página especificada
+
+sortBy:
+  in: query
+  name: 'sort[by]'
+  schema:
+    type: string
+    example: nome
+  description: Nome do campo para ordenação
+
+sortDirection:
+  in: query
+  name: 'sort[direction]'
+  schema:
+    type: string
+    example: asc
+  description: Direção da ordenção. Aceitos `asc` e `desc`
+
+filters:
+  in: query
+  name: 'filters[field_name][]'
+  schema:
+    type: array
+    example: open
+  description: Matriz de filtros
+
+searchTerm:
+  in: query
+  name: search_term
+  schema:
+    type: string
+    example: madagas
+  description: Termo para busca full-text

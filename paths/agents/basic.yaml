@@ -1,0 +1,45 @@
+get:
+  tags:
+    - agents
+  summary: Listar Agents
+  description: Retorna uma lista de agents
+  operationId: "listAgent"
+  parameters:
+    - $ref: '../../doc.yaml#/components/parameters/pageSize'
+    - $ref: '../../doc.yaml#/components/parameters/pageNumber'
+    - $ref: '../../doc.yaml#/components/parameters/sortBy'
+    - $ref: '../../doc.yaml#/components/parameters/sortDirection'
+    - $ref: '../../doc.yaml#/components/parameters/filters'
+    - $ref: '../../doc.yaml#/components/parameters/searchTerm'
+  responses:
+    '200':
+      description: Lista de ítens paginados
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: './templates/ListResponse.yaml'
+              - $ref: '../../common/MetaPagination.yaml'
+post:
+  tags:
+    - agents
+  summary: Criar Agente
+  description: Cria um novo agente
+  operationId: "createAgent"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: './specifics/CreateBody.yaml'
+  responses:
+    '201':
+      description: Criado com sucesso
+      content:
+        application/json:
+          schema:
+            $ref: './templates/SimpleResponse.yaml'
+    '422':
+      $ref: '../../doc.yaml#/components/responses/422ValidationError'
+    '500':
+      $ref: '../../doc.yaml#/components/responses/500ServerError'

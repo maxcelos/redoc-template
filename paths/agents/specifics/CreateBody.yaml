@@ -1,0 +1,23 @@
+required:
+  - name
+  - email
+  - password
+  - password_confirmation
+type: object
+properties:
+  name:
+    type: string
+    example: 'Joao da Silva'
+  email:
+    type: string
+    example: 'joao@email.com'
+  password:
+    type: string
+    example: 'senh4Muit0Forte'
+  password_confirmation:
+    type: string
+    example: 'senh4Muit0Forte'
+  roles:
+    type: array
+    description: Role IDs
+    example: [1, 3, 5]

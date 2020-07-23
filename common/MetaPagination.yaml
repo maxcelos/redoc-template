@@ -1,0 +1,38 @@
+type: object
+properties:
+  links:
+    type: object
+    properties:
+      first:
+        type: string
+        example: '?page%5Bnumber%5D=1'
+      last:
+        type: string
+        example: '?page%5Bnumber%5D=1'
+      prev:
+        type: string
+        example: null
+      next:
+        type: string
+        example: null
+  meta:
+    type: object
+    properties:
+      current_page:
+        type: integer
+        example: 1
+      from:
+        type: integer
+        example: 1
+      last_page:
+        type: integer
+        example: 1
+      per_page:
+        type: integer
+        example: 30
+      to:
+        type: integer
+        example: 1
+      total:
+        type: integer
+        example: 1

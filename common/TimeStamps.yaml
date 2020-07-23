@@ -1,0 +1,9 @@
+type: object
+properties:
+  created_at:
+    $ref: '../doc.yaml#/components/schemas/SimpleDate'
+  updated_at:
+    $ref: '../doc.yaml#/components/schemas/SimpleDate'
+  deleted_at:
+    $ref: '../doc.yaml#/components/schemas/SimpleDate'
+

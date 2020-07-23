@@ -1,0 +1,9 @@
+404NotFound:
+  description: O item buscado não existe
+204DeletedSuccess:
+  description: O item foi removido com sucesso
+422ValidationError:
+  description: Ocorreu uma falha na validação de dados
+500ServerError:
+  description: Ocorreu uma falha no servidor
+ImageResponse:
